@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zing.vn-Tin tức 24h, hình ảnh ấn tượng-ZING.VN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/plugin/fontawesome/css/all.css">
+</head>
+<body>
+    <div id="container">
+        <header id="zing-header">
+            <h1 id="logo">
+                <a href="#" title="Zing News">
+                 <span>Tri thức trực tuyến</span>       
+                </a>
+            </h1>
+            <nav id="main-menu">
+                <ul>
+                    <li><a href="./thoisu.html">Thời sự</a></li>
+                    <li><a href="./phapluat.html">Pháp luật</a></li>
+                    <li><a href="./thegioi.html">Thế giới</a></li>
+                    <li><a href="./xuatban.html">Xuất bản</a></li>
+                    <li><a href="./kinhdoanh.html">Kinh doanh</a></li>
+                    <li><a href="./congnghe.html">Công nghệ</a></li>
+                    <li><a href="./thethao.html">Thể thao</a></li>
+                    <li><a href="./giaitri.html">Giải trí</a></li>
+                    <li><a href="./thoitrang.html">Thời trang</a></li>
+                    <li><a href="./songtre.html">Sống trẻ</a></li>
+                    <li><i class="fa fa-ellipsis-h"></i></li>
+                </ul>
+            </nav>
+            <div class="searchform-wrap">
+                <form name="search" id="searchbox" class="znewsSearch" target="_blank">
+                    <input type="text" name="s" id="search_keyword" placeholder="Nhập nội dung cần tìm...">
+                    <button type="submit" id="search_button"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <span
+                style=
+                "position: absolute;
+                 right: 18%;
+                 top: 11px;"
+            >
+            <a href=""><i class="fa fa-user" style="font-size: 22px; color: #393030;"></i></a>
+            </span>
+        </header>
+        <content id="content" class="overflow">
+            <div id="first-content" class="overflow">
+                <div id="last-new">
+                    <span id="last-new1">
+                        <a href="">Tin Mới</a>
+                    </span>
+                    <span id="last-new2">
+                        <a href=""></a>
+                    </span>
+                    <script>
+                        var textNew = new Array();
+                           textNew[0]= 'Học sinh lớp 4 bị que xiên đâm thủng mặt khi đang nô đùa với bạn';
+                           textNew[1]= 'Vì sao khách Tây sợ ký biên bản vi phạm giao thông ở Sài Gòn?';
+                           textNew[2]= 'Xe đầu kéo tông 2 nhà dân ở Sài Gòn, nhiều người thoát chết';
+                           textNew[3]= 'Nguy cơ toàn cầu thất nghiệp: Lời cảnh tỉnh chấn động';
+                           textNew[4]= 'Nhà máy đóng tàu nghìn tỷ ở Cà Mau hoang hóa, gỉ sét sau 12 năm';
+                           textNew[5]= 'Ngoại hạng Anh đang đi vào vết xe đổ La Liga';
+                           console.log(textNew);
+                           var counter = 0;
+                           function loop(){
+                               if(counter > 5) counter = 0;
+                               document.getElementById('last-new2').firstElementChild.innerHTML = textNew[counter];
+                               counter++;
+                               console.log(counter);
+                               setTimeout (loop, 1500);
+                           }
+                           loop();
+                    </script>
+                    <div id="weather">
+                        <span></span>
+                        <img src="https://static-znews.zadn.vn/images/icons/weather/v1/cloudy.png" alt="">
+                    </div>
+                    <script>
+                        var weather = new Array();
+                        weather[0]= 'TP.HCM 31°C / 25-33°C';
+                        weather[1]='Hà Nội 28°C / 26-32°C';
+                        var number = 0;
+                        function loop1(){
+                            if(number > 1) number = 0;
+                            document.getElementById('weather').firstElementChild.innerHTML = weather[number];
+                            number++;
+                            console.log(number);
+                            setTimeout(loop1,1500);
+                        }
+                        loop1();
+                    </script>
+                </div>
+            </div>
+
+            <div id="second-content" class="overflow">
+                <div id="new1" class="new-left-size">
+                    <a href="">
+                        <img class="img-new" src="https://znews-photo.zadn.vn/w210/Uploaded/ofh_huqfztmf/2019_08_20/28_1.jpg" alt="">
+                        <span>CLB Hà Nội 1-1 Altyn Asyr (hết H1): Quang Hải sút phạt ghi bàn</span>
+                    </a>
+                </div>
+                <div id="new2" class="new-left-size">
+                    <a href="">
+                        <img class="img-new" src="https://znews-photo.zadn.vn/w210/Uploaded/izhqv/2019_08_20/56.jpg" alt="">
+                        <span>'Tôi không dám nghĩ mình khiến Hồng Đào, Quang Minh công khai ly hôn'</span>
+                    </a>
+                </div>
+                <div id="new3" class="new-left-size">
+                    <a href="">
+                        <img class="img-new" src="https://znews-photo.zadn.vn/w210/Uploaded/pwivovlb/2019_08_20/khac_hung.jpg" alt="">
+                        <span>Truy nã Chủ tịch HĐQT Đại học Đông Đô</span>
+                    </a>
+                </div>
+                <div id="new4" class="new-left-size">
+                    <a href="">
+                        <img class="img-new" src="https://znews-photo.zadn.vn/w210/Uploaded/ohunuai/2019_08_20/1111_DiYp_Tien_cYu_hon_Puka_tren_song_truyYn_hinh.jpg" alt="">
+                        <span>Puka xác nhận chia tay bạn trai đạo diễn sau 3 năm sống chung</span>
+                    </a>
+                </div>
+                <div id="new5" class="new-left-size">
+                        <a href="">
+                            <img class="img-new" src="https://znews-gif.zadn.vn/Uploaded/lce_qjlcv/2019_08_20/ezgifcomcrop_22.gif" alt="">
+                            <span>Vì sao Hà Nội mưa tối trời lúc 2h chiều?</span>
+                        </a>
+                </div>
+                <div id="new-highlight">
+                    <a href="">
+                        <img id="highlight-img" src="https://znews-photo.zadn.vn/w960/Uploaded/nugzrd/2019_08_21/YNGT.jpg" alt="">
+                        <h1>Hành khách la hét khi xe khách Phương Trang tông ôtô giường nằm</h1>
+                    </a>
+                    <p>
+                        Ít nhất 1 người chết và 40 người bị thương khi xe khách Phương Trang tông vào hông xe giường nằm biển số Phú Yên. Người dân phải đập cửa đưa nạn nhân đi cấp cứu.
+                    </p>
+                    <ul>
+                        <li><a href="">Xe khách tông nhau, 1 người chết, 40 người nhập viện</a></li>
+                    </ul>
+                </div>
+                <div id="new6" class="new-right">
+                     <a href="">
+                        <img class="img-size-right" src="https://znews-photo.zadn.vn/w480/Uploaded/kbfoplb/2019_08_18/6879.jpg" alt="">
+                        <p><i class="fa fa-image"></i>Hàng trăm nghìn người chôn chân trong mưa khắp các ngả đường Hà Nội</p>
+                     </a>
+                </div>
+                <div id="new7" class="new-right">
+                     <a href="">
+                        <img class="img-size-right" src="https://znews-photo.zadn.vn/w480/Uploaded/sgtnrb/2019_08_19/HCCA.jpg" alt="">
+                        <p>Đưa tàu HD8 quay lại, Trung Quốc âm mưu gì ở Biển Đông?</p>
+                     </a>
+                </div>
+            </div>
+
+            <div id="multimedia">
+                <div id="menu-multimedia">
+                    <h3><i class="fa fa-grip-lines-vertical"></i>Multimedia</h3>
+                    <ul>
+                        <li><a href="">Video</a></li>
+                        <li><a href="">Longform</a></li>
+                        <li><a href="">voices</a></li>
+                        <li><a href="">lens</a></li>
+                        <li><a href="">quizz</a></li>
+                    </ul>
+                </div>
+                <div id="new8">
+                    <a href="">
+                        <img src="https://znews-gif.zadn.vn/Uploaded/ofh_cgmzstgk/2019_08_21/ezgifcomcrop_2.gif" alt="">
+                        <p>Vụ tai nạn xe khách Phương Trang diễn ra như thế nào?</p>
+                    </a>
+                </div>
+                <div id="new9" class="hover-color">
+                    <a href="">
+                        <img class="multimedia-img"src="https://znews-photo.zadn.vn/w480/Uploaded/OpluOAA/2019_08_21/haimynhanquynhbupbedocthangoicamhetnackhiendanongmeman1.jpg" alt="">
+                        <p class="new-content"><i class="fa fa-image"></i> Nhan sắc của những 'tiểu tam' bị ghét trên màn ảnh Việt</p>
+                    </a>
+                </div>
+                <div id="new10" class="hover-color">
+                    <a href="">
+                        <img class="multimedia-img" src="https://znews-photo.zadn.vn/w480/Uploaded/pgi_ubnvgunau/2019_08_21/dsadasdasdads.jpg" alt="">
+                        <p class="new-content"><i class="fas fa-play-circle"></i> Greenwood - 'ngọc thô' sáng nhất MU sau thế hệ của Beckham, Scholes</p>
+                    </a>
+                </div>
+                <div id="new11" class="hover-color">
+                    <a href="">
+                        <img class="multimedia-img" src="https://znews-photo.zadn.vn/w480/Uploaded/tmuitg/2019_08_09/YanarDagfromtheside.jpg" alt="">
+                        <p class="new-content"><i class="fa fa-image"></i> Cháy suốt 4.000 năm, ngọn lửa ở Azerbaijan vẫn không dừng lại</p>
+                    </a>
+                </div>
+                <div id="new12" class="hover-color">
+                    <a href="">
+                         <img class="multimedia-img" src="https://znews-photo.zadn.vn/w480/Uploaded/pirr/2019_08_21/7937_2142a66jpg.jpg" alt="">
+                         <p class="new-content"><i class="fa fa-image"></i> 13 trường quốc tế tại TP.HCM có học phí cao nhất bao nhiêu?</p>
+                    </a>
+                </div>
+                <div id="new13" class="hover-color">
+                    <a href="">
+                         <img class="multimedia-img" src="https://znews-photo.zadn.vn/w480/Uploaded/reyxqqskxq/2019_08_21/19.jpg" alt="">
+                         <p class="new-content"><i class="fa fa-image"></i> Kiếm gần 100 triệu USD/năm, siêu sao The Rock tiêu tiền như thế nào?</p>
+                    </a>
+                </div>
+                <div id="new14" class="hover-color">
+                    <a href="">
+                         <img class="multimedia-img" src="https://znews-photo.zadn.vn/w480/Uploaded/neg_estpyge/2019_08_21/hyundaigrand10niosfront8ccca_1.jpg" alt="">
+                         <p class="new-content"><i class="fa fa-image"></i> Hyundai Grand i10 mới khác gì so với phiên bản đang bán ở VN?</p>
+                    </a>
+                </div>
+            </div>
+
+            <div id="new-for-you">
+                <h1><i class="fa fa-grip-lines-vertical"></i>DÀNH CHO BẠN</h1>
+                <p id="login"><a href="">Đăng nhập</a> để xem tin tức dành riêng cho bạn</p>
+                <div>
+                        <a href="">
+                        <img src="https://znews-photo.zadn.vn/w480/Uploaded/zxgorz/2019_08_22/minh.jpg" alt="">
+                        <h3>Gã trai quay 8 clip khi dâm ô bé gái ở Sài Gòn</h3>
+                    </a>
+                    <p>Dụ dỗ bé gái 15 tuổi vào quán cà phê chòi, Minh đã thực hiện hành vi dâm ô và dùng iPad để quay lại 8 clip.</p>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="https://znews-photo.zadn.vn/w480/Uploaded/xpcwvovb/2019_08_21/sdsd.jpg" alt="">
+                        <h3>Nhân viên showroom lái ôtô lao từ tầng 2 xuống đất</h3>
+                    </a>
+                    <p>Xế hộp sau khi đâm vỡ kính đã lao từ tầng 2 của showroom xuống đất. Người điều khiển xe này là nhân viên cửa hàng bị thương phải vào bệnh viện cấp cứu.</p>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="https://znews-photo.zadn.vn/w480/Uploaded/neg_yrznslt/2019_08_22/Van_Quyet_2.jpg" alt="">
+                        <h3>HLV Park loại Văn Quyết, Đức Chinh khi gặp Thái Lan</h3>
+                    </a>
+                    <p>Chiều 22/8, Văn Quyết không được HLV Park Hang-seo điền tên trong danh sách 27 cầu thủ chuẩn bị cho trận gặp Thái Lan vào ngày 5/9.</p>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="https://adtima-media.zadn.vn/2019/08/203e410a-a558-481e-84c6-b4e503f30162.jpg" alt="">
+                        <h3>Nâng cấp tổng đài CSKH 24/7, Samsung được người dùng phản hồi tích cực</h3>
+                    </a>
+                    <p>Mỗi năm, nhà sản xuất Hàn Quốc tổ chức 2 đợt tập huấn cùng nhiều buổi huấn luyện trực tuyến cho nhân viên CSKH trên cả nước, nhằm đào tạo quy trình, truyền đạt kinh nghiệm thực tế.</p>
+                </div>
+            </div>
+
+            <div class="section-entertainment">
+                <div id="news" class="box-category">
+                    <h2><i class="fa fa-grip-lines-vertical"></i><a href="">THỜI SỰ</a></h2>
+                    <div class="size-content-h3">
+                        <a href="">
+                            <img class="img-h3" src="https://znews-photo.zadn.vn/w480/Uploaded/lexw/2019_08_22/cachet.jpg" alt="">
+                            <h3>Vì sao cá chết liên tục trên các hồ ở Hà Nội</h3>
+                        </a>
+                    </div>
+                    <div class="size-content-p">
+                        <a href="">
+                             <img class="img-p" src="https://znews-photo.zadn.vn/w480/Uploaded/yfsgs/2019_08_22/VCNET.jpg" alt="">
+                             <p>Thi tìm hiểu lịch sử Đảng trên mạng xã hội VCNET</p>
+                        </a>
+                    </div>
+                    <div class="size-content-p">
+                        <a href="">
+                            <img class="img-p" src="https://znews-photo.zadn.vn/w480/Uploaded/ofh_hmzpgazs/2019_08_22/lu.jpg" alt="">
+                            <p>Lũ lại xuất hiện ở Mường Lát, một người mất tích</p>
+                        </a>
+                     </div>
+                </div>
+
+                <div id="world" class="box-category">
+                    <h2><i class="fa fa-grip-lines-vertical"></i><a href="">THẾ GIỚI</a></h2>
+                    <div class="size-content-h3">
+                        <a href="">
+                            <img class="img-h3" src="https://znews-photo.zadn.vn/w480/Uploaded/lce_vjrcc/2019_08_22/canh_sat_han_quoc.jpg" alt="">
+                            <h3>Hàn Quốc chấm dứt hiệp ước chia sẻ tin tình báo quân sự với Nhật</h3>
+                        </a>
+                    </div>
+                    <div class="size-content-p">
+                        <a href="">
+                            <img class="img-p" src="https://znews-photo.zadn.vn/w480/Uploaded/qhj_jwrscslhfo/2019_08_21/haj156627062440816947079crop1566270628160140573853.jpg" alt="">
+                            <p><i class="fas fa-play-circle"></i>Người phụ nữ bị tống giam vì chọn sai túi rác ở Anh</p>
+                        </a>
+                    </div>
+                    <div class="size-content-p">
+                        <a href="">
+                            <img class="img-p" src="https://znews-photo.zadn.vn/w480/Uploaded/lce_vjrcc/2019_08_22/simon_chen.jpg" alt="">
+                            <p>Nhân viên lãnh sự quán Anh ở Hong Kong bị TQ bắt vì 'gặp gái mại dâm'</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="business" class="box-category">
+                        <h2><i class="fa fa-grip-lines-vertical"></i><a href="">KINH DOANH</a></h2>
+                        <div class="size-content-h3">
+                            <a href="">
+                                <img class="img-h3" class="" src="https://znews-photo.zadn.vn/w480/Uploaded/chuobun/2019_08_22/tom1.jpg" alt="">
+                                <h3>Vì sao cua hoàng đế, tôm hùm Alaska ồ ạt về Việt Nam với giá rẻ?</h3>
+                            </a>
+                        </div>
+                        <div class="size-content-p">
+                            <a href="">
+                                <img class="img-p" src="https://znews-photo.zadn.vn/w480/Uploaded/chuobun/2019_08_22/NQH06245.jpg" alt="">
+                                <p>Chiến lược, phương hướng KT - XH phải thể hiện rõ khát vọng phát triển</p>
+                            </a>
+                        </div>
+                        <div class="size-content-p">
+                            <a href="">
+                                <img class="img-p" src="https://znews-photo.zadn.vn/w480/Uploaded/rgtgtn/2019_08_22/taubayboquen21566338872width1000height625.jpg" alt="">
+                                <p>Chưa biết xử lý thế nào tàu bay bị bỏ quên 12 năm ở Nội Bài</p>
+                            </a>
+                        </div>    
+                </div>
+                <div id="technology" class="box-category">
+                        <h2><i class="fa fa-grip-lines-vertical"></i><a href="">CÔNG NGHỆ</a></h2>
+                        <div class="size-content-h3">
+                            <a href="">
+                                <img class="img-h3" src="https://znews-photo.zadn.vn/w480/Uploaded/lce_jwquc/2019_08_22/Usher.jpg" alt="">
+                                <h3>Instagram vừa cho thấy sao hạng A cũng ngờ nghệch như người thường</h3>
+                            </a>
+                        </div>
+                        <div class="size-content-p">
+                            <a href="">
+                                <img class="img-p" src="https://znews-photo.zadn.vn/w480/Uploaded/lce_jwquc/2019_08_22/Z07922082019copy.jpg" alt="">
+                                <p>Đây là nâng cấp sáng giá nhất trên iPhone 11</p>
+                            </a>
+                        </div>
+                        <div class="size-content-p">
+                            <a href="">
+                                <img class="img-p" src="https://znews-photo.zadn.vn/w480/Uploaded/neg_wpeczyr/2019_08_21/Note10vsHuaweiP30ProvsPixel3vsiPhoneXSMaxLOWLIGHTCameraComparison.jpg" alt="">
+                                <p>Dùng Galaxy Note10+ tôi thấy Apple đối xử quá tệ với người dùng</p>
+                            </a>
+                        </div>    
+                </div>
+            </div>
+
+            <div id="section-video">
+               <header id="section-title">
+                   <h3><i class="fa fa-grip-lines-vertical"></i><a href="">VIDEO</a></h3>
+               </header>
+               <div id="section-content">
+                    <div id="video-player">
+                        <iframe src="https://www.youtube.com/embed/vC0K8WMY7RE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <aside id="section-sidebar">
+                        <div class="article">
+                            <a href="">
+                                <img src="https://znews-photo.zadn.vn/w480/Uploaded/izhqv/2019_08_17/AVATHUMINH.jpg" alt="">
+                                <p><i class="fas fa-play-circle"></i>Thu Minh: 'Tôi có lỗi với chồng'</p>
+                            </a>
+                        </div>
+                        <div class="article">
+                            <a href="">
+                                <img src="https://znews-photo.zadn.vn/w480/Uploaded/ofh_wuytgazs/2019_08_23/loonaoliviahye_1.jpg" alt="">
+                                <p><i class="fas fa-play-circle"></i>Nhóm nhạc Hàn có thành viên ra mắt sau một ngày luyện tập</p>
+                            </a>
+                        </div>
+                        <div class="article">
+                                <a href="">
+                                    <img src="https://znews-photo.zadn.vn/w480/Uploaded/ycgvpivp/2019_08_23/uiyNdW5.jpg" alt="">
+                                    <p><i class="fas fa-play-circle"></i>Hoa hậu H'Hen Niê làm nên lịch sử tại Miss Universe 2018</p>
+                                </a>
+                        </div>
+                        <div class="article">
+                                <a href="">
+                                    <img src="https://znews-gif.zadn.vn/Uploaded/qhj_jwrscslhfo/2019_08_23/ezgifcomcrop.gif" alt="">
+                                    <p><i class="fas fa-play-circle"></i>Tài xế ôtô 4 chỗ vô tư 'cắt mặt' tử thần</p>
+                                </a>
+                        </div>
+                    </aside>
+               </div>
+            </div>
+
+            <div class="section-entertainment" id="section">
+                <div id="law" class="box-category">
+                    <h2><i class="fa fa-grip-lines-vertical"></i><a href="">PHÁP LUẬT</a></h2>
+                    <div class="size-content-h3">
+                        <a href="">
+                            <img class="img-h3" src="https://znews-photo.zadn.vn/w480/Uploaded/xpcwvovb/2019_08_24/tratanconno.jpg" alt="">
+                            <h3>Bắt cóc, tra tấn con nợ để lấy bằng được tiền về</h3>
+                        </a>
+                    </div>
+                    <div class="size-content-p">
+                        <a href="">
+                             <img class="img-p" src="https://znews-photo.zadn.vn/w480/Uploaded/pwivovlb/2019_08_25/trom_xe.jpg" alt="">
+                             <p>Trộm nhầm xe có gắn định vị, công an tìm đến tận nhà</p>
+                        </a>
+                    </div>
+                    <div class="size-content-p">
+                        <a href="">
+                            <img class="img-p" src="https://znews-photo.zadn.vn/w480/Uploaded/mtfuc/2019_08_24/Trung_1_thumbe.jpg" alt="">
+                            <p>Khởi tố tội mua dâm với ông bố bịa chuyện con gái bị xâm hại</p>
+                        </a>
+                     </div>
+                </div>
+
+                <div id="car" class="box-category">
+                    <h2><i class="fa fa-grip-lines-vertical"></i><a href="">XE</a></h2>
+                    <div class="size-content-h3">
+                        <a href="">
+                            <img class="img-h3" src="https://znews-photo.zadn.vn/w480/Uploaded/neg_estpyge/2019_08_24/IMG_1123.jpg" alt="">
+                            <h3><i class="fa fa-image"></i>Siêu xe Porsche 911 GT3 RS màu xanh lá độc nhất xuống phố Sài Gòn</h3>
+                        </a>
+                    </div>
+                    <div class="size-content-p">
+                        <a href="">
+                            <img class="img-p" src="https://znews-photo.zadn.vn/w480/Uploaded/bgtngt/2019_08_24/Urus_16.jpg" alt="">
+                            <p><i class="fa fa-image"></i>Urus bán chạy, Lamborghini đạt giá trị vốn hóa 11 tỷ USD</p>
+                        </a>
+                    </div>
+                    <div class="size-content-p">
+                        <a href="">
+                            <img class="img-p" src="https://znews-photo.zadn.vn/w480/Uploaded/lce_cjvcc/2019_08_24/IMG_1610_Copy.jpg" alt="">
+                            <p>Honda Accord 2019 sắp về VN sẽ là bản 1.5L tăng áp, giá khoảng 1,2 tỷ</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="life" class="box-category">
+                        <h2><i class="fa fa-grip-lines-vertical"></i><a href="">SỐNG TRẺ</a></h2>
+                        <div class="size-content-h3">
+                            <a href="">
+                                <img class="img-h3" class="" src="https://znews-photo.zadn.vn/w480/Uploaded/ywfrd/2019_08_24/68831056_2664831796873951_8848220713862037504_n_thumb.jpg" alt="">
+                                <h3>Người phụ nữ tặng gạo cho cậu bé nhặt ve chai ở Sài Gòn</h3>
+                            </a>
+                        </div>
+                        <div class="size-content-p">
+                            <a href="">
+                                <img class="img-p" src="https://znews-photo.zadn.vn/w480/Uploaded/lce_qdhuc/2019_08_24/thao5.jpg" alt="">
+                                <p>Yêu lâu năm, 3 cặp hot trong giới trẻ bất ngờ lộ 'bằng chứng chia tay'</p>
+                            </a>
+                        </div>
+                        <div class="size-content-p">
+                            <a href="">
+                                <img class="img-p" src="https://znews-photo.zadn.vn/w480/Uploaded/lce_jwqqc/2019_08_24/68672034_675400342869988_7461842946166358016_n_thumb_thumb.jpg" alt="">
+                                <p>Start up Sử Hộ Vương ra mắt tạo hình mới của nhân vật bị nói 'gợi dục'</p>
+                            </a>
+                        </div>    
+                </div>
+                <div id="education" class="box-category">
+                        <h2><i class="fa fa-grip-lines-vertical"></i><a href="">CÔNG NGHỆ</a></h2>
+                        <div class="size-content-h3">
+                            <a href="">
+                                <img class="img-h3" src="https://znews-photo.zadn.vn/w480/Uploaded/pirr/2019_08_24/dong_do.jpg" alt="">
+                                <h3>Kẽ hở nào của Bộ GD&ĐT khiến ĐH Đông Đô 'nhởn nhơ' đào tạo văn bằng 2?</h3>
+                            </a>
+                        </div>
+                        <div class="size-content-p">
+                            <a href="">
+                                <img class="img-p" src="https://znews-photo.zadn.vn/w480/Uploaded/zbvunua/2019_08_24/giai_toan.jpg" alt="">
+                                <p>99% người giải sai câu đố tính cạnh X</p>
+                            </a>
+                        </div>
+                        <div class="size-content-p">
+                            <a href="">
+                                <img class="img-p" src="https://znews-photo.zadn.vn/w480/Uploaded/pirr/2019_08_24/31c02a8971994d0b9c2d35ff7c6b071d.jpg" alt="">
+                                <p>Danh thủ Gary Neville mở trường đại học</p>
+                            </a>
+                        </div>    
+                </div>
+            </div>
+
+        </content>
+        <div id="footer">
+            <img src="https://static-znews.zadn.vn/images/logo_zing_transparent.png" alt="">
+            <p>
+                <strong>©</strong> Toàn bộ bản quyền thuộc Zing.vn
+            </p>
+            <div>
+                <ul>
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Tuyển dụng</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                    <li><a href="">Quảng cáo</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
